@@ -845,6 +845,7 @@ header {
 
 .examples__item__text .name {
   font-size: 36px;
+  font-weight: 400;
   font-family: "AADuke-Fill";
   margin: 5px 0; }
 
