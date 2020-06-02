@@ -38,4 +38,34 @@ $(document).ready(function () {
     $('header .header__menu nav').slideToggle();
   });
 
+  $('.examples__items').lightSlider({
+    pause: 7000,
+    auto: true,
+    item: 4,
+    pager: false,
+    slideMargin: 20,
+    loop:true,
+    slideMove:1,
+    responsive : [
+      {
+        breakpoint:1620,
+        settings: {
+          item:3
+        }
+      },
+      {
+        breakpoint:1250,
+        settings: {
+          item:2
+        }
+      },
+      {
+        breakpoint:850,
+        settings: {
+          item:1
+        }
+      }
+    ]
+  });
+
 });
