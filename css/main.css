@@ -470,6 +470,7 @@ body {
     justify-content: space-between;
     align-items: center; }
   .head-contacts .phone {
+    display: block;
     font-size: 14px;
     margin-right: 30px; }
 
@@ -1143,13 +1144,20 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   text-align: right; }
-  .footer-contacts .phone, .footer-contacts .address {
-    width: 100%; }
-    .footer-contacts .phone a, .footer-contacts .address a {
+  .footer-contacts .phone, .footer-contacts .address, .footer-contacts .email {
+    width: 100%;
+    margin-bottom: 5px;
+}
+    .footer-contacts .phone a, .footer-contacts .address a, .footer-contacts .email a {
       font-weight: 700;
       font-size: 16px; }
     .footer-contacts .phone p, .footer-contacts .address p {
       font-size: 16px; }
+
+.footer-contacts .phone a,
+.footer-contacts .email a {
+  display: block;
+}
 
 .under-footer__wrapper {
   justify-content: space-between;
