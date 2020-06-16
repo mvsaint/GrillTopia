@@ -619,7 +619,8 @@ header {
     line-height: 24px; }
 
 .item img {
-  max-width: 100%; }
+  max-width: 100%; 
+}
 
 .subjects {
   padding: 120px 0;
@@ -660,6 +661,10 @@ header {
       text-align: right;
       padding-right: 15px;
       padding-left: 10%; }
+
+.subjects__item.hide {
+	display: none;
+}
 
 .subjects__item__theme {
   font-size: 14px;
@@ -1349,6 +1354,10 @@ footer {
     flex-wrap: wrap; }
     .footer .footer__menu .links a {
       margin: 15px;
-      padding: 0; } }
+      padding: 0; } 
+  .cooking__item__image img {
+    max-width: 100%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

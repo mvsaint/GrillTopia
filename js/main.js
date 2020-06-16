@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	
+  $('.subjects .see-all a').click(function(e) {
+    e.preventDefault();
+    $(this).hide();
+    $('.subjects__item.hide').slideDown().removeClass('hide');
+    $('.subjects__item').css('display', 'flex');
+  });
 
   $('#request__form select').select2({
     minimumResultsForSearch: -1
