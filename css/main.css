@@ -413,7 +413,7 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .icon-whatsup svg {
@@ -1299,6 +1299,15 @@ footer {
     text-align: center; } }
 
 @media screen and (max-width: 1050px) {
+  header .header__menu .link {
+    display: block;
+  }
+  header .header__menu .submenu {
+    display: none !important;
+  }
+  .header__search {
+    display: none;
+  }
   .form-row {
     flex-wrap: wrap;
     margin: 0; }
@@ -1323,7 +1332,7 @@ footer {
     .head-contacts .wrapper > div {
       width: 100%;
       display: flex;
-      justify-content: center; }
+      justify-content: space-between; }
   header {
     position: fixed;
     width: 100%;
@@ -1331,7 +1340,7 @@ footer {
     z-index: 100;
     padding-bottom: 0; }
   body {
-    padding-top: 130px; }
+    padding-top: 97px; }
   header .wrapper {
     flex-wrap: wrap; }
   header .header__menu {
@@ -1439,6 +1448,13 @@ footer {
       padding: 0; } 
   .cooking__item__image img {
     max-width: 100%;
+  }
+  .head-contacts .wrapper > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .head-contacts__social > div {
+    margin: 10px 0;
   }
 }
 
